@@ -207,35 +207,8 @@
 
 ## <img src="https://img.icons8.com/fluency/48/000000/refresh.png" width="24" style="vertical-align:middle"/> Failed Delivery Flow
 
-```
-Agent marks "Failed"
-        │
-        ▼
-┌───────────────────┐
-│ 1. Log status     │  ← order_status_history: "Failed"
-│    with reason    │
-└─────────┬──────────┘
-          ▼
-┌───────────────────┐
-│ 2. Notify         │  ← Email + SMS to customer
-│    Customer       │
-└─────────┬──────────┘
-          ▼
-┌───────────────────┐
-│ 3. Customer       │  ← Opens app, picks new date
-│    Reschedules    │
-└─────────┬──────────┘
-          ▼
-┌───────────────────┐
-│ 4. Re-run         │  ← Auto-assign nearest available
-│    Auto-Assign    │    agent for new date
-└─────────┬──────────┘
-          ▼
-┌───────────────────┐
-│ 5. New attempt    │  ← Status: "Rescheduled → Picked Up"
-│    begins         │
-└────────────────────┘
-```
+<img width="1024" height="559" alt="image" src="https://github.com/user-attachments/assets/d257e246-c7ee-4a59-8f17-220e393b6810" />
+
 
 ---
 
