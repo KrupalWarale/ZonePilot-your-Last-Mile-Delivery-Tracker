@@ -143,16 +143,27 @@ export function DemoProvider({ children }: { children: ReactNode }) {
   const [currentUser, setCurrentUser] = useState<User | null>(() => {
     const params = new URLSearchParams(window.location.search);
     let role = params.get('role');
-    if (!role || !['customer', 'agent', 'admin'].includes(role)) {
-      role = sessionStorage.getItem('zp_active_role') || 'customer';
+    
+    // Support auto-login via explicit query parameter (useful for testing/development)
+    if (role && ['customer', 'agent', 'admin'].includes(role)) {
+      const defaultUser = defaultUsers[`${role}@zonepilot.app`]?.user;
+      if (defaultUser) {
+        const savedPool = localStorage.getItem('zp_logged_in_users');
+        const pool = savedPool ? JSON.parse(savedPool) : {};
+        pool[role] = defaultUser;
+        localStorage.setItem('zp_logged_in_users', JSON.stringify(pool));
+        sessionStorage.setItem('zp_active_role', role);
+        return defaultUser;
+      }
     }
+    
+    // Otherwise, check session storage for active role and look up logged-in user in pool
+    const activeRole = sessionStorage.getItem('zp_active_role');
+    if (!activeRole) return null;
+    
     const savedPool = localStorage.getItem('zp_logged_in_users');
     const pool = savedPool ? JSON.parse(savedPool) : {};
-    if (!pool.customer) pool.customer = defaultUsers['customer@zonepilot.app'].user;
-    if (!pool.agent) pool.agent = defaultUsers['agent@zonepilot.app'].user;
-    if (!pool.admin) pool.admin = defaultUsers['admin@zonepilot.app'].user;
-    localStorage.setItem('zp_logged_in_users', JSON.stringify(pool));
-    return pool[role] || null;
+    return pool[activeRole] || null;
   });
 
   const [orders, setOrders] = useState<Order[]>(() => {
