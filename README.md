@@ -77,7 +77,8 @@
 
 ## <img src="https://img.icons8.com/fluency/48/000000/network.png" width="24" style="vertical-align:middle"/> System Architecture
 
-<img width="1024" height="559" alt="image" src="https://github.com/user-attachments/assets/59d8bb6b-7de5-486b-98c6-1e8ea0ddfdd2" />
+<img width="1253" height="467" alt="{D2F6178E-91A0-4FAF-94AC-31B30375C299}" src="https://github.com/user-attachments/assets/f4050746-683b-4bc8-b99c-4d96405064ad" />
+
 
 
 ---
@@ -200,7 +201,8 @@
 ---
 
 <p align="center">
-  <img width="876" height="262" alt="{14409AE6-FB9E-4E92-9A49-2D77D8BC721B}" src="https://github.com/user-attachments/assets/d2fbb99a-3796-4984-ac50-9076a2742356" />
+ 
 
   <b>ZonePilot — Every Package, Perfectly Routed.</b>
 </p>
+ <img width="876" height="262" alt="{14409AE6-FB9E-4E92-9A49-2D77D8BC721B}" src="https://github.com/user-attachments/assets/d2fbb99a-3796-4984-ac50-9076a2742356" />
