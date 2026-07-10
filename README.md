@@ -175,7 +175,7 @@
 
 ## <img src="https://img.icons8.com/fluency/48/000000/video-call.png" width="24" style="vertical-align:middle"/> Demo
 
-**Live Demo:** [https://zonepilot.vercel.app](https://zonepilot.vercel.app)
+**Live Demo:** [https://ai.studio/apps/44f7572d-4dad-4e20-addf-e1eb2ffa5f6e?fullscreenApplet=true](https://ai.studio/apps/44f7572d-4dad-4e20-addf-e1eb2ffa5f6e?fullscreenApplet=true)
 
 **Test Credentials:**
 
