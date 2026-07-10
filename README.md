@@ -27,6 +27,12 @@
 
 ---
 
+
+Uploading zonepilot-login-personal-microsoft-edge-2026-07-10-14-45-00_FVYDJxxZ.mp4…
+
+
+---
+
 ## <img src="https://img.icons8.com/fluency/48/000000/idea.png" width="24" style="vertical-align:middle"/> Features
 
 ### <img src="https://img.icons8.com/fluency/24/000000/key-security.png" width="20" style="vertical-align:middle"/> Multi-Role Authentication
