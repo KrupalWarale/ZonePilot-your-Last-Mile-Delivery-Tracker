@@ -60,7 +60,7 @@
 - **Immutable Audit Trail** — Every status change logged with timestamp & actor
 - **Live Tracking** — Customers view real-time status & full timeline
 
-### <img src="https://img.icons8.com/fluency/24/000000/notification.png" width="20" style="vertical-align:middle"/> Notifications
+###  Notifications
 
 - **Email** — Sent on every status change (SendGrid free tier)
 - **SMS** — Critical alerts (Twilio free tier)
