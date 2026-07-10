@@ -200,5 +200,7 @@
 ---
 
 <p align="center">
+  <img width="876" height="262" alt="{14409AE6-FB9E-4E92-9A49-2D77D8BC721B}" src="https://github.com/user-attachments/assets/d2fbb99a-3796-4984-ac50-9076a2742356" />
+
   <b>ZonePilot — Every Package, Perfectly Routed.</b>
 </p>
