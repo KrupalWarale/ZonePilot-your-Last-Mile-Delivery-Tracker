@@ -186,19 +186,16 @@
 
 ## <img src="https://img.icons8.com/fluency/48/000000/artificial-intelligence.png" width="24" style="vertical-align:middle"/> Auto-Assignment Logic
 
-```mermaid
-flowchart TD
-    A[Order Created] --> B[Get Pickup Zone]
-    B --> C[Find Available Agents]
-    C --> D[Same Pickup Zone]
-    C --> E[Within Distance Threshold]
-    D --> F[Sort Candidates]
-    E --> F
-    F --> G["Distance ↑<br/>Last Assigned ↑"]
-    G --> H[Assign Top Agent]
-    H --> I[Mark Agent Unavailable]
-    I --> J[Log Assignment History]
-```
+- [ ] Get order pickup zone
+- [ ] Find available agents
+  - Same pickup zone (priority)
+  - Within distance threshold
+- [ ] Sort by
+  - Distance (ASC)
+  - Last assigned timestamp (ASC — round-robin)
+- [ ] Assign top agent
+- [ ] Update `agent.is_available = false`
+- [ ] Log assignment in `order_status_history`
 
 **Edge Cases Handled:**
 
