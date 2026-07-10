@@ -53,7 +53,8 @@
 
 ### <img src="https://img.icons8.com/fluency/24/000000/route.png" width="20" style="vertical-align:middle"/> Order Lifecycle & Tracking
 
-<img width="1024" height="434" alt="image" src="https://github.com/user-attachments/assets/e4f7eda4-3ee0-4249-8c84-351a122bc3ea" />
+<img width="1024" height="434" alt="image" src="https://github.com/user-attachments/assets/7748bae8-2c2c-45e6-8d85-4bb86be5e54e" />
+
 
 
 - **Immutable Audit Trail** — Every status change logged with timestamp & actor
