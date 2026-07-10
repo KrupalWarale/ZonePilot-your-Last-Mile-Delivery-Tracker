@@ -28,7 +28,11 @@
 ---
 
 
-Uploading zonepilot-login-personal-microsoft-edge-2026-07-10-14-45-00_FVYDJxxZ.mp4…
+
+
+https://github.com/user-attachments/assets/860b2de9-d305-4a92-a1ef-26107fee514e
+
+
 
 
 ---
