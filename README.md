@@ -77,55 +77,15 @@
 
 ## <img src="https://img.icons8.com/fluency/48/000000/network.png" width="24" style="vertical-align:middle"/> System Architecture
 
-```
-┌───────────────────┐     ┌─────────────────┐     ┌─────────────────┐
-│  React Frontend   │────▶│   Node.js API   │────▶│   PostgreSQL    │
-│ (Admin/Customer)  │     │   (Express.js)  │     │   (Primary DB)  │
-└───────────────────┘     └────────┬────────┘     └─────────────────┘
-                                    │
-                          ┌─────────┴─────────┐
-                          ▼                   ▼
-                    ┌─────────┐         ┌─────────┐
-                    │  Redis  │         │ SendGrid│
-                    │ (Cache) │         │ (Email) │
-                    └─────────┘         └─────────┘
-```
+<img width="1024" height="559" alt="image" src="https://github.com/user-attachments/assets/59d8bb6b-7de5-486b-98c6-1e8ea0ddfdd2" />
+
 
 ---
 
 ## <img src="https://img.icons8.com/fluency/48/000000/price-tag.png" width="24" style="vertical-align:middle"/> Rate Calculation Engine
 
-```
-┌───────────────────────────────────────────────────────────────┐
-│  INPUT: Pickup Addr | Drop Addr | L×B×H | Actual Weight        │
-│         Order Type (B2B/B2C) | Payment (Prepaid/COD)           │
-└───────────────────────────────────────────────────────────────┘
-                              │
-                              ▼
-                    ┌──────────────────┐
-                    │  Zone Detection  │  ← Geocode → Zone IDs
-                    └────────┬─────────┘
-                             ▼
-                    ┌──────────────────┐
-                    │  Volumetric Wt   │  ← (L × B × H) ÷ 5000
-                    │  max(actual,vol) │
-                    └────────┬─────────┘
-                             ▼
-                    ┌──────────────────┐
-                    │ Rate Card Lookup │  ← B2B/B2C + Intra/Inter
-                    │  (Admin Config)  │
-                    └────────┬─────────┘
-                             ▼
-                    ┌──────────────────┐
-                    │  COD Surcharge   │  ← If COD, add configured fee
-                    │  (Admin Config)  │
-                    └────────┬─────────┘
-                             ▼
-                    ┌──────────────────┐
-                    │  FINAL CHARGE    │  ← Shown before confirmation
-                    │  (Transparent)   │
-                    └──────────────────┘
-```
+<img width="1024" height="559" alt="image" src="https://github.com/user-attachments/assets/d38bbb54-5fb5-4f65-b6c8-eb5be525c118" />
+
 
 **Key Design Decisions:**
 
