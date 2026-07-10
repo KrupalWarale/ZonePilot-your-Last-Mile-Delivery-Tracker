@@ -53,7 +53,8 @@
 
 ### <img src="https://img.icons8.com/fluency/24/000000/route.png" width="20" style="vertical-align:middle"/> Order Lifecycle & Tracking
 
-![Order Lifecycle Flow](image.png)
+<img width="1024" height="434" alt="image" src="https://github.com/user-attachments/assets/e4f7eda4-3ee0-4249-8c84-351a122bc3ea" />
+
 
 - **Immutable Audit Trail** — Every status change logged with timestamp & actor
 - **Live Tracking** — Customers view real-time status & full timeline
@@ -136,7 +137,8 @@
 
 ## <img src="https://img.icons8.com/fluency/48/000000/database.png" width="24" style="vertical-align:middle"/> Database Schema
 
-![Database Schema Diagram](image-1.png)
+<img width="1024" height="572" alt="image" src="https://github.com/user-attachments/assets/490f27d1-4e1c-44c8-a693-c77a8554d54d" />
+
 
 **Immutable Audit Trail:** `order_status_history` records every transition with `actor_id` (who changed it) and `timestamp`. No updates allowed — only inserts.
 
